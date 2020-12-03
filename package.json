@@ -1,0 +1,19 @@
+{
+  "name": "contact-form-bem",
+  "version": "1.0.0",
+  "description": "contact-frm",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "keywords": [
+    "Contact",
+    "form"
+  ],
+  "author": "Kos Krzysztof",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

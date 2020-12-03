@@ -1,0 +1,29 @@
+.btn {
+  width: 17rem;
+  height: 5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  transition: all 0.3s ease;
+  outline: none;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  }
+  &--disabled {
+    cursor: not-allowed;
+  }
+  &--blue {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-1,
+      $color-primary-2
+    );
+    color: $color-white;
+  }
+}

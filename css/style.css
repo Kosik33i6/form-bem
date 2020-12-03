@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 75%; }
+  @media (max-width: 1200px) and (orientation: landscape) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) and (orientation: portrait) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) and (orientation: landscape) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 600px) and (orientation: portrait) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.heading-secondary {
+  display: inline-block;
+  background-image: linear-gradient(to right, #5433ff, #20bdff, #a5fecb, #5433ff, #20bdff, #a5fecb);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem; }
+  @media (max-width: 600px) and (orientation: portrait) {
+    .heading-secondary {
+      font-size: 1.9rem; } }
+
+.btn {
+  width: 17rem;
+  height: 5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  transition: all 0.3s ease;
+  outline: none; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  .btn--disabled {
+    cursor: not-allowed; }
+  .btn--blue {
+    background-image: linear-gradient(to right, #5433ff, #20bdff);
+    color: #fff; }
+
+.form {
+  position: relative;
+  width: 40rem;
+  height: 75vh;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5), 0 0 2rem rgba(0, 0, 0, 0.3);
+  font-size: 1.7rem;
+  overflow: hidden;
+  color: #747474;
+  transition: all 0.3s ease; }
+  @media (max-width: 900px) and (orientation: portrait) {
+    .form {
+      width: 70%;
+      height: 75vh; } }
+  @media (max-width: 900px) and (orientation: landscape) {
+    .form {
+      width: 100%;
+      height: 97vh; } }
+  @media (max-width: 600px) and (orientation: portrait) {
+    .form {
+      width: 100%;
+      height: 75vh; } }
+  .form__heading-box {
+    text-align: center;
+    margin-bottom: 3rem; }
+    @media (max-width: 900px) and (orientation: portrait) {
+      .form__heading-box {
+        margin-bottom: 4rem; } }
+    @media (max-width: 900px) and (orientation: landscape) {
+      .form__heading-box {
+        margin-bottom: 0; } }
+    @media (max-width: 600px) and (orientation: portrait) {
+      .form__heading-box {
+        margin-bottom: 2rem; } }
+  .form__input-box {
+    margin: 3rem 0;
+    height: 6rem; }
+    .form__input-box:not(:last-child) {
+      position: relative; }
+    @media (max-width: 600px) and (orientation: portrait) {
+      .form__input-box {
+        margin: 1rem 0;
+        height: 6rem; } }
+  .form__btn-box {
+    text-align: center;
+    margin-top: 2rem; }
+    @media (max-width: 600px) and (orientation: portrait) {
+      .form__btn-box {
+        margin-top: 1rem; } }
+  .form__input {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+    color: inherit;
+    transition: all 0.3s ease; }
+    .form__input--active {
+      background-image: linear-gradient(to top, #fafafa, transparent); }
+    .form__input:focus {
+      border-bottom: 2px solid #7ed56f; }
+    .form__input:focus:invalid {
+      border-bottom: 2px solid #ff4500; }
+  .form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    transition: all 0.3s ease; }
+  .form__input-checkbox {
+    position: relative;
+    margin-right: 3rem;
+    width: 2rem;
+    height: 2rem; }
+    .form__input-checkbox::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      background-color: #fff; }
+    .form__input-checkbox:valid::before {
+      background-color: #28b485; }
+  .form__input-checkbox:valid + .form__label {
+    color: #7ed56f; }
+  .form__input-box:last-child .form__label {
+    width: auto;
+    position: static;
+    font-size: 1.3rem; }
+  .form__input:focus + .form__label,
+  .form__input:valid + .form__label {
+    transform: translateY(-2.2rem);
+    font-size: 1.1rem;
+    color: #7ed56f; }
+  .form__input:focus:invalid + .form__label {
+    transform: translateY(-2.2rem);
+    font-size: 1.1rem;
+    color: #ff4500; }
+  .form__input--invalid + .form__label {
+    transform: translateY(-2.2rem);
+    font-size: 1.1rem;
+    color: #ff4500; }
+
+.loader {
+  position: absolute;
+  background-color: #252525;
+  bottom: 0%;
+  right: 0%;
+  transform: translateY(105%) scale(1.5);
+  border-radius: 50%;
+  width: 100%;
+  height: 50%; }
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-center-horizontal {
+  justify-content: center; }
+
+.flex-center-vertical {
+  align-items: center; }
+
+.flex-space-between {
+  justify-content: space-between; }
+
+.self-center-horizontal {
+  align-self: center; }
+
+.section-register {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(to right bottom, #5433ff, #20bdff, #a5fecb); }
+  @media (max-width: 900px) and (orientation: landscape) {
+    .section-register {
+      padding: 0.5rem; } }

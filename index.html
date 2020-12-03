@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <section class="section-register flex-row flex-center-horizontal flex-center-vertical">
+            <form action="#" class="form form--loading">
+                <div class="loader"></div>
+                <div class="form__heading-box">
+                    <h2 class="heading-secondary">Register Here</h2>
+                </div>
+                <div class="form__inputs box">
+                    <div class="form__input-box">
+                        <input type="text" id="name" class="form__input" required minlength="3" maxlength="30">
+                        <label class="form__label" for="name">Name</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input type="email" id="email" class="form__input" required minlength="6" maxlength="45">
+                        <label class="form__label" for="email">Email</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input type="password" id="password" class="form__input" required minlength="10" maxlength="45">
+                        <label class="form__label" for="password">Password</label>
+                    </div>
+                    <div class="form__input-box flex-row">
+                        <input type="checkbox" id="checkbox" required class="form__input-checkbox self-center-horizontal">
+                        <label class="form__label" for="checkbox">I agree to the terms and Condition</label>
+                    </div>
+                </div>
+                <div class="form__btn-box">
+                    <button type="submit" class="btn btn--blue btn--disabled btn--loading">Register</button>
+                </div>
+            </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

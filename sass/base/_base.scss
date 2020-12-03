@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 75%;
+  @include respond(tab-landscape) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-portrait) {
+    font-size: 56.25%;
+  }
+  @include respond(phone-landscape) {
+    font-size: 43.75%;
+  }
+  @include respond(phone-portrait) {
+    font-size: 50%;
+  }
+}

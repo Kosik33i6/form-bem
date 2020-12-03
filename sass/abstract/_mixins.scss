@@ -1,0 +1,24 @@
+// ! desktop 1800
+// ! tab-land  1200
+// ! tab-port 900
+// ! phone 600
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-portrait {
+    @media (max-width: 600px) and (orientation: portrait) {
+      @content;
+    }
+  } @else if $breakpoint == phone-landscape {
+    @media (max-width: 900px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $breakpoint == tab-portrait {
+    @media (max-width: 900px) and (orientation: portrait) {
+      @content;
+    }
+  } @else if $breakpoint == tab-landscape {
+    @media (max-width: 1200px) and (orientation: landscape) {
+      @content;
+    }
+  }
+} ;
