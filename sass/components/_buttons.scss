@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   width: 17rem;
   height: 5rem;
   padding: 0.5rem 1.5rem;
@@ -17,6 +18,21 @@
   }
   &--disabled {
     cursor: not-allowed;
+  }
+  &--loading {
+    &::before {
+      content: "Loading";
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-transform: uppercase;
+      border-radius: 3rem;
+      line-height: 5rem;
+      background-color: $color-grey-dark-2;
+      color: $color-grey-light-1;
+    }
   }
   &--blue {
     background-image: linear-gradient(
